@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1609432638531-5ef8d0507b90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Ping Pong">
+            <div class="score-container">
+                <span class="score"><span id="score-p1">0</span> to <span id="score-p2">0</span></span>
+                <p>Use the button below to keep score.</p>
+            </div>
+            <div class="max-score">
+                <label for="playing-to">Playing to</label>
+                <select name="playing-to" id="playing-to">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="player-one">+1 Player 1</button>
+                <button class="btn" id="player-two">+1 Player 2</button>
+                <button class="btn reset">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="confetti.js" type="module"></script>
+    <script src="main.js"></script>
+</body>
+</html>
